@@ -10,7 +10,7 @@
   "scripts": {
     "pretest": "eslint --fix .",
     "deploy": "dpl",
-    "build": "scripts/make_dist.js all",
+    "build": "chmod +x scripts/make_dist.js && scripts/make_dist.js all",
     "test": "nyc mocha --recursive './test/mocha/*.js' './core/test/mocha/*.js' './azure/test/mocha/*.js'",
     "build-all": "scripts/make_dist.js all",
     "build-project": "scripts/make_dist.js project",

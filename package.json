@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fortinet/fortiweb-autoscale"
+    "url": "git+https://github.com/dhhuang/autoscaling"
   },
   "author": "fortinet",
   "license": "MIT",

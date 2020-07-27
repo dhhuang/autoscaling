@@ -12,5 +12,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: autoscaling
-    tags: true
+    #tags: true
     branch: master

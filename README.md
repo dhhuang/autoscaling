@@ -1,4 +1,4 @@
-# FortiWeb Autoscale
+# FortiWeb Autoscale 
 A collection of **Node.js** modules and cloud-specific templates which support basic autoscale functionality for groups of FortiWeb VM instances on various cloud platforms.
 
 This project contains the code and templates for the **Amazon AWS** and **Microsoft Azure** autoscale deployments.

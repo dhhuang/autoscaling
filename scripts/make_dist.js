@@ -487,7 +487,7 @@ async function makeDistAzureFuncApp() {
     packageInfo = readPackageJsonAt(rTempDirSrcFuncApp);
     zipFileName = `${packageInfo.name}.zip`;
     saveAsFile = path.resolve(rDirDist, zipFileName);
-    await sleep(60000);
+    await sleep(30000);
     // zip
     zipFilePath =
         await zipSafe(zipFileName, rTempDirSrcFuncApp, ['*.git*', '*.vsc*']);

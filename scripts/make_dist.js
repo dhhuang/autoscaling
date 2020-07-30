@@ -445,6 +445,10 @@ async function makeDistAwsCloudFormation(options = {excludeList: [], quickstart:
     console.info(`${path.resolve(rDirDist, zipFileName)}`);
 }
 
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 async function makeDistAzureFuncApp() {
     console.info('Making distribution zip package');
     let rTempDir = await makeTempDir(),
@@ -483,6 +487,7 @@ async function makeDistAzureFuncApp() {
     packageInfo = readPackageJsonAt(rTempDirSrcFuncApp);
     zipFileName = `${packageInfo.name}.zip`;
     saveAsFile = path.resolve(rDirDist, zipFileName);
+    await sleep(60000);
     // zip
     zipFilePath =
         await zipSafe(zipFileName, rTempDirSrcFuncApp, ['*.git*', '*.vsc*']);
@@ -573,7 +578,7 @@ async function makeDistAll() {
     await makeDistAWS();
     await makeDistAWSLambda();
     await makeDistAzure();
-    await makeDistAzureFuncApp();
+    //await makeDistAzureFuncApp();
     await makeDistAzureQuickStart();
     await makeDistProject();
     await makeDistAwsCloudFormation();

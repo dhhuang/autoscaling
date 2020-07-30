@@ -11,6 +11,6 @@ deploy:
   file: dist/*
   skip_cleanup: true
   on:
-    repo:autoscaling
+    repo: autoscaling
     tags: true
     branch: master

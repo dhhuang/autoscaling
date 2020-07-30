@@ -12,7 +12,7 @@ The project also contains a deployment script which can generate packages for ea
 
 ## Supported Platforms
 This project supports autoscaling for the cloud platforms listed below. The version tag in parentheses refers to the autoscale module version included in this project.
-  * Amazon AWS (1.0.0-beta)
+  * Amazon AWS (1.0.0-beta) 
   * Microsoft Azure (1.0.0-beta)
 
 ## Deployment Packages

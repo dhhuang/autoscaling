@@ -6,11 +6,11 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 1df077feccd4e159d00c591d6068d8049691593e
+    secure: "1df077feccd4e159d00c591d6068d8049691593e"
   file_glob: true
   file: dist/*
   skip_cleanup: true
   on:
-    repo: "autoscaling"
+    repo: dhhuang/autoscaling
     tags: true
     branch: master
